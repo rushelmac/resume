@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+body {
+  margin: 0 5%;
+  font-family: 'Raleway';
+  font-size: 16px;
+  line-height: 1.8em;
+}
+
+section{
+    margin: 1em;
+    padding: 1em;
+}
+
+/* ---------------------------------------------Icon Bar------------------------------------- */
+
+.icon-bar {
+    width: 50px; /* Set a specific width */
+    background-color: #555; /* Dark-grey background */
+    position: fixed;
+    right: 0;
+}
+  
+.icon-bar a {
+    display: block; /* Make the links appear below each other instead of side-by-side */
+    text-align: center; /* Center-align text */
+    padding: 16px; /* Add some padding */
+    transition: all 0.3s ease; /* Add transition for hover effects */
+    color: white; /* White text color */
+    font-size: 20px; /* Increased font-size */
+}
+
+.icon-bar a:hover {
+    background-color: #000; /* Add a hover color */
+}
+
+.active {
+    background-color: #d38304; /* Add an active/current color */
+}
+
+.navbar-default .icon-bar > .active > a, 
+.navbar-default .icon-bar > .active > a:hover, 
+.navbar-default .icon-bar > .active > a:focus 
+
+/* ---------------------------------------------Header------------------------------------- */
+
+header, main, footer {
+    margin: 0 auto;
+}
+
+header {
+    padding: 2em;
+    text-align: center;
+    background-size: cover;
+    background-position: fixed;
+    color: black;
+}
+
+header section {
+    margin: 0 auto 0 13em;
+    max-width: 640px;
+    font-size: larger; 
+    position: absolute;
+}
+
+header img {
+    border-radius: 50%;
+    max-width: 150px;
+}
+
+.txt-type > .txt {
+    border-right: 0.1rem solid #777;
+    color: maroon;
+}
+/* ---------------------------------------------Main & Education------------------------------------- */
+
+main {
+    max-width: 1140px;
+}
+
+main section:not(:last-child) {
+    border-bottom: 1px solid #ccc;
+}
+
+article {
+    padding:0 1em;
+    margin-bottom: 2em;
+}
+
+h3 {
+    text-transform: uppercase;
+}
+
+h3, h4 {
+    font-weight: bold;
+}
+
+.school, .job-title {
+    text-transform: capitalize;
+  }
+  
+  .school span, .job-title span {
+    color: #889499;
+    text-decoration: underline;
+  }
+
+/* ---------------------------------------------Skills------------------------------------- */
+
+.course, .skills {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+.course .title {
+    color: #509e98;
+    -ms-flex: 0 0 33.3%;
+    flex: 0 0 33.3%;
+    max-width: 33%;
+}
+
+.course .descrition {
+    -ms-flex: 0 0 66.6%;
+    flex: 0 0 66.6%;
+    max-width: 66.6%;
+}
+
+.course .descrition p {
+    padding-left: 1em;
+}
+
+.skills .column {
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+
+.skills .column ul, ul.job-description {
+    list-style-type: none;
+}
+
+.skills .column ul > li:before {
+    content: "►";
+    padding-right: 0.5em;
+    color: #509e98;
+}
